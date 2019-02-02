@@ -1,0 +1,32 @@
+{
+  "name": "purescript-node-electron",
+  "homepage": "https://github.com/cprussin/purescript-node-electron",
+  "authors": [
+    "Connor Prussin <connor@prussin.net>"
+  ],
+  "description": "Purescript bindings to electron",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cprussin/purescript-node-electron.git"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "purescript-effect": "^2.0.1",
+    "purescript-foreign": "^5.0.0",
+    "purescript-halogen": "^4.0.0",
+    "purescript-maybe": "^4.0.1",
+    "purescript-options": "^4.0.0",
+    "purescript-prelude": "^4.1.0",
+    "purescript-transformers": "^4.1.0",
+    "purescript-unsafe-coerce": "^4.0.0",
+    "purescript-web-dom": "^1.0.0",
+    "purescript-web-events": "^1.0.1",
+    "purescript-web-html": "^1.2.0"
+  }
+}
