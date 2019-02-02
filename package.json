@@ -4,6 +4,7 @@
     "electron": "^4.0.3"
   },
   "devDependencies": {
+    "bower": "^1.8.8",
     "pulp": "^12.3.1"
   }
 }
