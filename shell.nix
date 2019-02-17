@@ -1,5 +1,5 @@
 {
-  purescript-version ? "0.12.1",
+  purescript-version ? "0.12.2",
   nixjs-version ? "0.0.6",
   nixjs ? fetchTarball "https://github.com/cprussin/nixjs/archive/${nixjs-version}.tar.gz",
   nixpkgs ? <nixpkgs>
