@@ -1,14 +1,16 @@
 {
-  purescriptVersion ? "0.12.1",
-  nixjs ? fetchTarball "https://github.com/cprussin/nixjs/archive/0.0.4.tar.gz",
+  purescript-version ? "0.12.1",
+  nixjs-version ? "0.0.6",
+  nixjs ? fetchTarball "https://github.com/cprussin/nixjs/archive/${nixjs-version}.tar.gz",
   nixpkgs ? <nixpkgs>
 }:
 
-with import nixpkgs {
-  overlays = [
-    (import nixjs { purescript = purescriptVersion; })
-  ];
-};
+let
+  nixjs-overlay = import nixjs { purescript = purescript-version; };
+  nixpkgs' = import nixpkgs { overlays = [ nixjs-overlay ]; };
+in
+
+with nixpkgs';
 
 mkShell {
   buildInputs = [
