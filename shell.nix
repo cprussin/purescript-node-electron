@@ -18,5 +18,6 @@ mkShell {
     nodejs
     yarn
     purescript
+    psc-package
   ];
 }
